@@ -3,6 +3,7 @@
 import Image from 'next/image'
 
 import {useEffect, useState} from "react";
+import Link from "next/link";
 
 export function useScrollDirection() {
     const [scrollDirection, setScrollDirection] = useState('');
@@ -33,26 +34,31 @@ export default function Header() {
                 <div className='flex w-[50%] items-center gap-[8px]'>
                     <Image
                         className='cursor-pointer'
-                        src="/online.png"
+                        src="/online.svg"
                         width={18}
                         height={18}
                         alt="..."
                     />
-                    <div className='text-black text-2xl font-bold cursor-pointer'>Edwin Sidharta</div>
+                    <Link href="/" className='text-black text-2xl font-bold cursor-pointer'>
+                        Edwin Sidharta
+                    </Link>
                 </div>
                 <div className='w-[50%]'>
                     <ul className='flex place-content-end items-center h-[100%] gap-[38px]'>
                         <li>
-                            <a href=""
-                               className='transition ease-in-out duration-300 transform hover:text-gray-400 font-bold text-black text-lg font-semibold'>Home</a>
+                            <Link href="/" className='transition ease-in-out duration-300 transform hover:text-gray-400 font-bold text-black text-lg font-semibold'>
+                                Home
+                            </Link>
                         </li>
                         <li>
-                            <a href=""
-                               className='transition ease-in-out duration-300 transform hover:text-gray-400 font-bold text-black text-lg font-semibold'>Work</a>
+                            <Link href="/work" className='transition ease-in-out duration-300 transform hover:text-gray-400 font-bold text-black text-lg font-semibold'>
+                                Work
+                            </Link>
                         </li>
                         <li>
-                            <a href=""
-                               className='transition ease-in-out duration-300 transform hover:text-gray-400 font-bold text-black text-lg font-semibold'>About</a>
+                            <Link href="/about" className='transition ease-in-out duration-300 transform hover:text-gray-400 font-bold text-black text-lg font-semibold'>
+                                About
+                            </Link>
                         </li>
                     </ul>
                 </div>

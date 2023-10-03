@@ -1,9 +1,23 @@
+"use client";
+
+import {useEffect} from "react";
+import AOS from "aos";
+
 import Greeting from "@/app/component/greeting/greeting";
+import Work from "@/app/component/work/work";
 
 export default function Home() {
-  return (
-    <main className="flex flex-col items-center bg-white">
-        <Greeting/>
-    </main>
-  )
+    useEffect(() => {
+        AOS.init({
+            easing: "ease-out-cubic",
+            once: true,
+            offset: 50,
+        });
+    }, []);
+    return (
+        <main className="flex flex-col items-center bg-white">
+            <Greeting/>
+            <Work/>
+        </main>
+    )
 }
