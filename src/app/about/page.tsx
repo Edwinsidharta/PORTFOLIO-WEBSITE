@@ -4,19 +4,25 @@ export default function About() {
   return (
     <main className="flex flex-col items-center bg-white">
         <div className={"flex w-[100%] py-20 px-44 gap-36"}>
-            <div className={"flex flex-col w-[50%] text-black gap-6 px-10"}>
+            <div
+                data-aos="fade"
+                className={"flex flex-col w-[50%] text-black gap-6 px-10"}
+            >
                 <div className={"font-bold text-4xl"}>
                     I'm Edwin, a software developer based in Surabaya.
                 </div>
                 <div className={"text-2xl"}>
                     Hey there, I'm Edwin, a software developer based in Surabaya
-                    with a passion for creating user friendly website. I especially enjoy working with other people, self disciplined and hard working.
+                    with a passion for creating user friendly website, mobile application or games. I especially enjoy working with other people, self disciplined and hard working.
                 </div>
                 <div className={"text-2xl"}>
-                    When I'm not develop or maintaining software or app, you can find me enjoying workout, cooking or playing game. Thanks for stopping by my portfolio!
+                    When I'm not develop or maintaining software or app, you can find me enjoying feeding my fish, workout, cooking or playing game. Thanks for stopping by my portfolio!
                 </div>
             </div>
-            <div className={"flex flex-col w-[50%] text-black gap-6 px-28 py-4 select-none"}>
+            <div
+                data-aos="fade"
+                className={"flex flex-col w-[50%] text-black gap-6 px-28 py-4 select-none"}
+            >
                 <div className={"font-bold text-2xl underline"}>
                     What I like
                 </div>
@@ -36,7 +42,7 @@ export default function About() {
                     What I'm learning
                 </div>
                 <div className={"text-2xl"}>
-                    Editing Video
+                    Video Editing
                 </div>
                 <div className={"text-2xl"}>
                     Table Tennis
