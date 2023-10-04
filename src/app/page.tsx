@@ -1,9 +1,26 @@
-import Image from 'next/image'
+"use client"
+
+import {useEffect} from "react";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import Greeting from "@/app/component/greeting/greeting";
+import Work from "@/app/component/work/work";
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className={"text-red-600"}>HELLO WORLD</h1>
-    </main>
-  )
+    useEffect(() => {
+        AOS.init({
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50,
+            delay: 50,
+        });
+    });
+    return (
+        <main className="flex flex-col items-center bg-white">
+            <Greeting/>
+            <Work/>
+        </main>
+    )
 }
