@@ -36,7 +36,7 @@ export default function Work() {
                             Method For Deploying The Pet,
                             This Game Include 3 Different Pet And Egg Also Have Feature Shop And Mini Games!
                         </div>
-                        <Link href="/" className='flex gap-2 items-center w-fit'>
+                        <Link href="https://github.com/Edwinsidharta/TAMAGOTCHI-AR" className='flex gap-2 items-center w-fit'>
                             <div className='text-black font-bold '>
                                 View Project
                             </div>
