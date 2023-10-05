@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Footer() {
     return (
-        <main className='sticky bot bg-white py-[50px] px-[4%]'>
+        <main className='sticky bot bg-white py-[50px] px-[4%] w-[100%]'>
             <nav className='flex flex-col gap-[28px]'>
                 <div className='flex gap-[16px] items-center'>
                     <Image
@@ -14,7 +14,7 @@ export default function Footer() {
                     <div className='text-black text-4xl font-bold'>{"Contact"}</div>
                 </div>
                 <div className='w-[100%] pl-[54px]'>
-                    <ul className='flex items-center h-[100%] gap-[28px]'>
+                    <ul className='flex max-[426px]:flex-col min-[425px]:items-center h-[100%] gap-[28px]'>
                         <li>
                             <a href="https://www.linkedin.com/in/edwin-sidharta-a79482129/"
                                className='transition ease-in-out duration-300 transform hover:text-gray-400 font-bold text-black text-lg font-semibold'>{"LinkedIn"}</a>
