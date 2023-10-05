@@ -3,7 +3,7 @@ export default function About() {
         <main className="flex flex-col items-center bg-white">
             <div className={"flex w-[100%] py-20 px-44 gap-36"}>
                 <div
-                    data-aos="fade"
+                    data-aos="fade-right"
                     className={"flex flex-col w-[50%] text-black gap-6 px-10"}
                 >
                     <div className={"font-bold text-4xl"}>
@@ -17,7 +17,7 @@ export default function About() {
                     </div>
                 </div>
                 <div
-                    data-aos="fade"
+                    data-aos="fade-left"
                     className={"flex flex-col w-[50%] text-black gap-6 px-28 py-4 select-none"}
                 >
                     <div className={"font-bold text-2xl underline"}>
@@ -33,7 +33,7 @@ export default function About() {
                         {"Workout"}
                     </div>
                     <div className={"text-2xl"}>
-                        {"Workout"}
+                        {"Fish"}
                     </div>
                     <div className={"font-bold text-2xl underline"}>
                         {"What I'm learning"}
