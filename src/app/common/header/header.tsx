@@ -12,9 +12,9 @@ export default function Header() {
 
     return (
         <main
-            className={`sticky ${scrollDirection === 'down' ? '-top-[80px]' : 'top-0'} bg-white py-[22px] px-[5%] h-[80px] transition-all duration-300`}>
-            <nav className='flex justify-between'>
-                <div className='flex w-[50%] items-center gap-[8px]'>
+            className={`sticky ${scrollDirection === 'down' ? '-top-[10%]' : 'top-0'} bg-white py-[22px] px-[11%] transition-all duration-300`}>
+            <nav className='flex max-[426px]:flex-col max-[426px]:items-center justify-between'>
+                <div className='flex w-[50%] items-center gap-[8px] max-[426px]:w-auto'>
                     <Image
                         className='cursor-pointer'
                         src="/online.svg"
@@ -26,23 +26,25 @@ export default function Header() {
                         Edwin Sidharta
                     </Link>
                 </div>
-                <div className='w-[50%]'>
+                <div className='w-[50%] max-[426px]:w-auto'>
                     <ul className='flex place-content-end items-center h-[100%] gap-[38px]'>
                         <li>
                             <Link href="/"
-                               className={`transition ease-in-out duration-300 transform hover:text-gray-400 font-bold ${pathname != "/" ? 'text-black' : 'text-blue-400'} text-lg font-semibold`}>
+                                  className={`transition ease-in-out duration-300 transform hover:text-gray-400 font-bold ${pathname != "/" ? 'text-black' : 'text-blue-400'} text-lg font-semibold`}>
                                 Home
                             </Link>
                         </li>
                         <li>
-                            <a onClick={()=>{scrollToWorkPage(pathname)}}
+                            <a onClick={() => {
+                                scrollToWorkPage(pathname)
+                            }}
                                className='transition ease-in-out duration-300 transform hover:text-gray-400 font-bold text-black text-lg font-semibold'>
                                 Work
                             </a>
                         </li>
                         <li>
                             <Link href="/about"
-                               className={`transition ease-in-out duration-300 transform hover:text-gray-400 font-bold ${pathname != "/about" ? 'text-black' : 'text-blue-400'} text-lg font-semibold`}>
+                                  className={`transition ease-in-out duration-300 transform hover:text-gray-400 font-bold ${pathname != "/about" ? 'text-black' : 'text-blue-400'} text-lg font-semibold`}>
                                 About
                             </Link>
                         </li>
@@ -74,10 +76,12 @@ export function useScrollDirection() {
 };
 
 export function scrollToWorkPage(pathname: string | null) {
-    if(pathname != "/") window.location.href = "/?page=work"
-    window.scrollTo({
-        top: 800,
-        left: window.scrollX,
-        behavior: "smooth"
-    })
+    if (pathname != "/") window.location.href = "/?page=work"
+    else {
+        window.scrollTo({
+            top: 800,
+            left: window.scrollX,
+            behavior: "smooth"
+        })
+    }
 }
