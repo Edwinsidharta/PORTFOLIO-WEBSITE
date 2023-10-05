@@ -15,8 +15,8 @@ export default function Greeting() {
                     />
                 </div>
                 <div data-aos="fade" className='flex flex-col w-[25%] gap-[32px]' >
-                    <div className='text-orange-500 text-7xl font-extrabold'>Hello!</div>
-                    <div className='text-black text-5xl font-semibold'>I'm Edwin, a software developer based in Surabaya!</div>
+                    <div className='text-orange-500 text-7xl font-extrabold'>{"Hello!"}</div>
+                    <div className='text-black text-5xl font-semibold'>{"I'm Edwin, a software developer based in Surabaya!"}</div>
                 </div>
             </main>
             <hr className={"h-px border-0 dark:bg-gray-300"}/>

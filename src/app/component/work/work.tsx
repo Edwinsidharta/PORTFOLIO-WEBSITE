@@ -24,21 +24,19 @@ export default function Work() {
                 <div data-aos="fade" className='flex w-[50%]'>
                     <div className='flex flex-col w-[50%] gap-6'>
                         <div className='text-black text-5xl font-extrabold'>
-                            Tamagotchi AR
+                            {"Tamagotchi AR"}
                         </div>
                         <div className='text-gray-500 text-lg font-normal'>
-                            Virtual Pet Game AR
+                            {"Virtual Pet Game AR"}
                         </div>
                     </div>
                     <div data-aos="fade" className='flex flex-col w-[50%] gap-6'>
                         <div className='text-black text-2xl font-normal'>
-                            Virtual Pet Game Using Augmented Reality, Marker Method Used To Feed The Pet And Markerless
-                            Method For Deploying The Pet,
-                            This Game Include 3 Different Pet And Egg Also Have Feature Shop And Mini Games!
+                            {"Virtual Pet Game Using Augmented Reality, Marker Method Used To Feed The Pet And Markerless Method For Deploying The Pet, This Game Include 3 Different Pet And Egg Also Have Feature Shop And Mini Games!"}
                         </div>
                         <Link href="https://github.com/Edwinsidharta/TAMAGOTCHI-AR" className='flex gap-2 items-center w-fit'>
                             <div className='text-black font-bold '>
-                                View Project
+                                {"View Project"}
                             </div>
                             <Image
                                 className='cursor-pointer'

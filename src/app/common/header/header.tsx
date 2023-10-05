@@ -73,7 +73,7 @@ export function useScrollDirection() {
     return scrollDirection;
 };
 
-export function scrollToWorkPage(pathname: string) {
+export function scrollToWorkPage(pathname: string | null) {
     if(pathname != "/") window.location.href = "/?page=work"
     window.scrollTo({
         top: 800,
