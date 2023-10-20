@@ -12,7 +12,7 @@ export default function Header() {
 
     return (
         <main
-            className={`sticky ${scrollDirection === 'down' ? '-top-[10%]' : 'top-0'} bg-white py-[22px] px-[11%] transition-all duration-300`}>
+            className={`sticky ${scrollDirection === 'down' ? '-top-[100%]' : 'top-0'} bg-white py-[22px] px-[11%] transition-all duration-300`}>
             <nav className='flex max-[426px]:flex-col max-[426px]:items-center justify-between'>
                 <div className='flex w-[50%] items-center gap-[8px] max-[426px]:w-auto'>
                     <Image
