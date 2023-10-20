@@ -38,7 +38,7 @@ export default function Header() {
                             <a onClick={() => {
                                 scrollToWorkPage(pathname)
                             }}
-                               className='transition ease-in-out duration-300 transform hover:text-gray-400 font-bold text-black text-lg font-semibold'>
+                               className='transition ease-in-out duration-300 transform hover:text-gray-400 font-bold text-black text-lg font-semibold cursor-pointer'>
                                 Work
                             </a>
                         </li>
