@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {useSearchParams} from 'next/navigation'
 
-export default function Work() {
+export default function TamagotchiAr() {
     const searchParams = useSearchParams();
     const page = searchParams.get('page');
 
@@ -53,7 +53,7 @@ export default function Work() {
                     <Image
                         data-aos="fade-up"
                         className='cursor-pointer'
-                        src="/main_menu.jpg"
+                        src="/main_menu.png"
                         width={250}
                         height={500}
                         alt="..."
@@ -61,7 +61,7 @@ export default function Work() {
                     <Image
                         data-aos="fade-up"
                         className='cursor-pointer'
-                        src="/deploy.jpg"
+                        src="/deploy.png"
                         width={250}
                         height={500}
                         alt="..."
@@ -69,7 +69,7 @@ export default function Work() {
                     <Image
                         data-aos="fade-up"
                         className='cursor-pointer'
-                        src="/shop.jpg"
+                        src="/shop.png"
                         width={250}
                         height={500}
                         alt="..."
