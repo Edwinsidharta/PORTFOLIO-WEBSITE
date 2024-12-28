@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 import Greeting from "@/app/component/greeting/greeting";
 import TamagotchiAr from "@/app/component/work/tamagotchi-ar/tamagotchi-ar";
 import Anebantu from "@/app/component/work/anebantu/anebantu";
+import Jagel from "./component/work/jagel/jagel";
 
 export default function Home() {
     useEffect(() => {
@@ -21,6 +22,7 @@ export default function Home() {
     return (
         <main className="flex flex-col items-center bg-white">
             <Greeting/>
+            <Jagel/>
             <Anebantu/>
             <TamagotchiAr/>
         </main>

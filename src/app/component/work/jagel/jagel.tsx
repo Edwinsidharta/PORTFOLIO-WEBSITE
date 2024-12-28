@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {useSearchParams} from 'next/navigation'
 
-export default function TamagotchiAr() {
+export default function Jagel() {
     const searchParams = useSearchParams();
     const page = searchParams.get('page');
 
@@ -24,17 +24,17 @@ export default function TamagotchiAr() {
                 <div data-aos="fade" className='flex max-[769px]:flex-col w-[50%] max-[769px]:w-auto'>
                     <div className='flex flex-col w-[50%] gap-6'>
                         <div className='text-black text-5xl font-extrabold'>
-                            {"Tamagotchi AR"}
+                            {"Jagel - Buat Aplikasi Android"}
                         </div>
                         <div className='text-gray-500 text-lg font-normal'>
-                            {"Virtual Pet Game AR"}
+                            {"Website"}
                         </div>
                     </div>
                     <div data-aos="fade" className='flex flex-col w-[50%] max-[769px]:w-auto gap-6'>
                         <div className='text-black text-2xl font-normal'>
-                            {"Virtual Pet Game Using Augmented Reality, Marker Method Used To Feed The Pet And Markerless Method For Deploying The Pet, This Game Include 3 Different Pet And Egg Also Have Feature Shop And Mini Games!"}
+                            {"Platform for creating Android applications such as online transportation, online laundry, online massage, food delivery, reservation services, online stores, or other creative ideas. For now Jagel also have a CPaaS Product that handle call and conversation that integrated with Whatsapp, Facebook and Instagram"}
                         </div>
-                        <Link href="https://github.com/Edwinsidharta/TAMAGOTCHI-AR"
+                        <Link href="https://jagel.co/"
                               className='flex gap-2 items-center w-fit'>
                             <div className='text-black font-bold '>
                                 {"View Project"}
@@ -49,29 +49,29 @@ export default function TamagotchiAr() {
                         </Link>
                     </div>
                 </div>
-                <div className='flex max-[769px]:flex-col gap-6'>
+                <div className="flex flex-wrap gap-6 justify-center md:justify-center">
                     <Image
                         data-aos="fade-up"
                         className='cursor-pointer'
-                        src="/main_menu.png"
-                        width={250}
-                        height={500}
+                        src="/jagel.png"
+                        width={1000}
+                        height={1000}
                         alt="..."
                     />
                     <Image
                         data-aos="fade-up"
                         className='cursor-pointer'
-                        src="/deploy.png"
-                        width={250}
-                        height={500}
+                        src="/jagel2.png"
+                        width={1000}
+                        height={1000}
                         alt="..."
                     />
                     <Image
                         data-aos="fade-up"
                         className='cursor-pointer'
-                        src="/shop.png"
-                        width={250}
-                        height={500}
+                        src="/jagel3.png"
+                        width={1000}
+                        height={1000}
                         alt="..."
                     />
                 </div>
