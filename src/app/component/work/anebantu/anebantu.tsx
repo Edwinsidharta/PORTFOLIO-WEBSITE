@@ -21,7 +21,7 @@ export default function Anebantu() {
     return (
         <div className={"w-[100%] items-center"}>
             <main className={`flex flex-col w-[100%] items-center p-24 gap-12`}>
-                <div data-aos="fade" className='flex max-[769px]:flex-col w-[50%] max-[769px]:w-auto'>
+                <div className='flex max-[769px]:flex-col w-[50%] max-[769px]:w-auto'>
                     <div className='flex flex-col w-[50%] gap-6'>
                         <div className='text-black text-5xl font-extrabold'>
                             {"Website AneBantu"}
@@ -30,7 +30,7 @@ export default function Anebantu() {
                             {"Website"}
                         </div>
                     </div>
-                    <div data-aos="fade" className='flex flex-col w-[50%] max-[769px]:w-auto gap-6'>
+                    <div className='flex flex-col w-[50%] max-[769px]:w-auto gap-6'>
                         <div className='text-black text-2xl font-normal'>
                             {"AneBantu is a website that provides transaction digitization solutions for purchasing products at supermarkets, grocery stores, pharmacies, and others. When I was an employee there, this website was still under development and private, so I can't provide a Github link or website link."}
                         </div>
@@ -41,7 +41,6 @@ export default function Anebantu() {
                 </div>
                 <div className='flex max-[769px]:flex-col gap-6'>
                     <Image
-                        data-aos="fade-up"
                         className='cursor-pointer'
                         src="/anebantu.png"
                         width={800}

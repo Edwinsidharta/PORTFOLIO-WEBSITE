@@ -21,7 +21,7 @@ export default function TamagotchiAr() {
     return (
         <div className={"w-[100%] items-center"}>
             <main className={`flex flex-col w-[100%] items-center p-24 gap-12`}>
-                <div data-aos="fade" className='flex max-[769px]:flex-col w-[50%] max-[769px]:w-auto'>
+                <div className='flex max-[769px]:flex-col w-[50%] max-[769px]:w-auto'>
                     <div className='flex flex-col w-[50%] gap-6'>
                         <div className='text-black text-5xl font-extrabold'>
                             {"Tamagotchi AR"}
@@ -30,7 +30,7 @@ export default function TamagotchiAr() {
                             {"Virtual Pet Game AR"}
                         </div>
                     </div>
-                    <div data-aos="fade" className='flex flex-col w-[50%] max-[769px]:w-auto gap-6'>
+                    <div className='flex flex-col w-[50%] max-[769px]:w-auto gap-6'>
                         <div className='text-black text-2xl font-normal'>
                             {"Virtual Pet Game Using Augmented Reality, Marker Method Used To Feed The Pet And Markerless Method For Deploying The Pet, This Game Include 3 Different Pet And Egg Also Have Feature Shop And Mini Games!"}
                         </div>
@@ -51,7 +51,6 @@ export default function TamagotchiAr() {
                 </div>
                 <div className='flex max-[769px]:flex-col gap-6'>
                     <Image
-                        data-aos="fade-up"
                         className='cursor-pointer'
                         src="/main_menu.png"
                         width={250}
@@ -59,7 +58,6 @@ export default function TamagotchiAr() {
                         alt="..."
                     />
                     <Image
-                        data-aos="fade-up"
                         className='cursor-pointer'
                         src="/deploy.png"
                         width={250}
@@ -67,7 +65,6 @@ export default function TamagotchiAr() {
                         alt="..."
                     />
                     <Image
-                        data-aos="fade-up"
                         className='cursor-pointer'
                         src="/shop.png"
                         width={250}
